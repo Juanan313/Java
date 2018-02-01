@@ -1,4 +1,4 @@
-package org.mvpigs.DNIKata.DNI;
+package org.mvpigs.DNIKata;
 
 import java.util.Arrays;
 

@@ -3,6 +3,7 @@ package org.mvpigs.DNIKata;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+import org.mvpigs.DNIKata.DNI.TablaAsignacion;
 
 public class TablaAsignacionTest {
     
