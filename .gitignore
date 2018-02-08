@@ -1,8 +1,8 @@
 
-\.vscode/settings\.json
-
-DNIkata/\.settings/
 
 *.class
 
-BD/\.settings/
+.settings/
+
+.vscode/
+target/
