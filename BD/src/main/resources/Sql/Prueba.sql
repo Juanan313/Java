@@ -1,0 +1,1 @@
+ALTER table proyectobd.libros ADD categoría ENUM('Básico','Suplemento','Utilidades')
