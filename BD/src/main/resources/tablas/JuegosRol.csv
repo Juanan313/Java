@@ -1,12 +1,14 @@
-Nombre;Edición;Época
-Anima Beyond Fantasy;Core Exxet (revisada);Medieval
-D&D;4.0;Medieval
-D&D;3.5;Medieval
-Dragon Age;1ra Edición;Medieval
-El resurgir del dragón;1ra Edición;Medieval
-Fate;1ra Edición;*
-Hombrelobo el apocalipsis ;20 aniversario;Actual
-La leyenda de los 5 anillos;4ta Edición;Medieval
-Mago la ascension ;20 aniversario;Actual
-Pathfinder;1ra Edición;Medieval
-Vampiro la mascarada ;20 aniversario;Actual
+Nombre;Edición;Época;Ambientación
+Anima Beyond Fantasy;Core Exxet (revisada);Medieval;Fantasía
+D&D;4.0;Medieval;Fantasía
+D&D;3.5;Medieval;Fantasía
+Dragon Age;1ra Edición;Medieval;Fantasía
+El resurgir del dragón;1ra Edición;Medieval;Fantasía
+Fate;1ra Edición;*;*
+Hombrelobo el apocalipsis ;20 aniversario;Actual;Terror
+La leyenda de los 5 anillos;4ta Edición;Medieval;Historico Fantastico
+Mago la ascension ;20 aniversario;Actual;Terror
+Pathfinder;1ra Edición;Medieval;Fantasía
+Vampiro la mascarada ;20 aniversario;Actual;Terror
+Vampiro Edad Oscura;20 aniversario;Medieval;Terror
+La llamada de Cthulhu;7ª Edición;Contemporaneo;Terror

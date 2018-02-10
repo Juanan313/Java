@@ -1,98 +1,163 @@
-idLibros,Nombre,Idioma,rol_idRol,categoria
-1,Anima Beyond Fantasy - Dominus Exxet.pdf,Castellano,1,Suplemento
-2,Anima Beyond Fantasy - Core Exxet.pdf,Castellano,1,B‡sico
-3,Anima Beyond Fantasy - Arcana Exxet.pdf,Castellano,1,Suplemento
-4,Ficha Extra Psiquico 2.pdf,Castellano,1,Utilidades
-5,Ficha Extra Psiquico 1.pdf,Castellano,1,Utilidades
-6,Ficha Extra Magia.pdf,Castellano,1,Utilidades
-7,Ficha Extra Ki.pdf,Castellano,1,Utilidades
-8,Ficha Extra Base.pdf,Castellano,1,Utilidades
-9,Ficha Ampliada.pdf,Castellano,1,Utilidades
-10,Ficha BlackZerg.pdf,Castellano,1,Utilidades
-11,Ficha Extra Convocación.pdf,Castellano,1,Utilidades
-12,La Leyenda de los Cinco Anillos.pdf,Castellano,8,B‡sico
-13,Nuevas-tablas-de-herencia.pdf,Castellano,8,Utilidades
-14,Hoja-de-personaje.pdf,Castellano,8,Utilidades
-15,Mapa-rokugan.pdf,Castellano,8,Utilidades
-16,Tablas-de-encuentros.pdf,Castellano,8,Utilidades
-17,Tablas-de-herencia.pdf,Castellano,8,Utilidades
-18,Vampiro Ð Gehena La Ultima Noche.pdf,Castellano,11,Novela
-19,Mago - El Dia del Juicio.pdf,Castellano,9,Novela
-20,Hombre Lobo - La Ultima Batalla.pdf,Castellano,7,Novela
-21,4 - Setita.pdf,Castellano,11,Novela
-22,14 - Antologia.pdf,Castellano,11,Novela
-23,13 - Nosferatu.pdf,Castellano,11,Novela
-24,9 - Malkavian.pdf,Castellano,11,Novela
-25,6 - Lasombra.pdf,Castellano,11,Novela
-26,7 - Assamita.pdf,Castellano,11,Novela
-27,8 - Ravnos.pdf,Castellano,11,Novela
-28,2 - Tzimisce.pdf,Castellano,11,Novela
-29,3 - Gangrel.pdf,Castellano,11,Novela
-30,12 - Tremere.pdf,Castellano,11,Novela
-31,10 - Giovanni.pdf,Castellano,11,Novela
-32,11 - Brujah.pdf,Castellano,11,Novela
-33,5 - Ventrue.pdf,Castellano,11,Novela
-34,1 - Toreador.pdf,Castellano,11,Novela
-35,Triologia Lasombra - Libro 2 - Sombras.pdf,Castellano,11,Novela
-36,Triologia Lasombra - Libro 1 - Señales.pdf,Castellano,11,Novela
-37,Triologia Lasombra - Libro 3 - Sacrificios.pdf,Castellano,11,Novela
-38,7 Roehuesos.pdf,Castellano,7,Novela
-39,8 Contemplaestrellas.pdf,Castellano,7,Novela
-40,9 Hijos de Gaia.pdf,Castellano,7,Novela
-41,5 Garras Rojas.pdf,Castellano,7,Novela
-42,4 Furias Negras.pdf,Castellano,7,Novela
-43,3 Caminantes Silenciosos.pdf,Castellano,7,Novela
-44,14 Wendigo.pdf,Castellano,7,Novela
-45,6 Fianna.pdf,Castellano,7,Novela
-46,2 Camada de Fenris.pdf,Castellano,7,Novela
-47,12 Moradores del Cristal.pdf,Castellano,7,Novela
-48,10 Uktena.pdf,Castellano,7,Novela
-49,11 Colmillos Plateados.pdf,Castellano,7,Novela
-50,13 Danzantes de la espiral Negra.pdf,Castellano,7,Novela
-51,1 Señores de la sombra.pdf,Castellano,7,Novela
-52,Básico - Hombre Lobo 20 Aniversario.pdf,Castellano,7,B‡sico
-53,Suplemento - Razas Cambiantes.pdf,Castellano,7,Suplemento
-54,Suplemento - Rabia por el mundo.pdf,Castellano,7,Suplemento
-55,Pantalla - Hombre Lobo 20 Aniversario.pdf,Castellano,7,Utilidades
-56,Fichas - Cuaderno Razas.pdf,Castellano,7,Utilidades
-57,Ficha - Hombre Lobo 20.pdf,Castellano,7,Utilidades
-58,Swara.pdf,Castellano,7,Utilidades
-59,Simba.pdf,Castellano,7,Utilidades
-60,Rokea.pdf,Castellano,7,Utilidades
-61,Ratkin.pdf,Castellano,7,Utilidades
-62,Qualmi.pdf,Castellano,7,Utilidades
-63,Pumonca.pdf,Castellano,7,Utilidades
-64,Nuwisha.pdf,Castellano,7,Utilidades
-65,Nagah.pdf,Castellano,7,Utilidades
-66,Mokolé.pdf,Castellano,7,Utilidades
-67,Kitsune.pdf,Castellano,7,Utilidades
-68,Khan.pdf,Castellano,7,Utilidades
-69,Gurahl.pdf,Castellano,7,Utilidades
-70,Corax.pdf,Castellano,7,Utilidades
-71,Ceilican.pdf,Castellano,7,Utilidades
-72,Bubasti.pdf,Castellano,7,Utilidades
-73,Bastet.pdf,Castellano,7,Utilidades
-74,Balam.pdf,Castellano,7,Utilidades
-75,Bagheera.pdf,Castellano,7,Utilidades
-76,Ananasi.pdf,Castellano,7,Utilidades
-77,Ajaba.pdf,Castellano,7,Utilidades
-78,Básico - Vampiro Edad Oscura.pdf,Castellano,12,B‡sico
-79,Vamprio Edad Oscura- Pantalla del Narrador.pdf,Castellano,12,Utilidades
-80,EdadOscura-Fichas - Clanes.pdf,Castellano,12,Utilidades
-81,Anexo - Glosario.pdf,Castellano,11,Utilidades
-82,Ficha - Básica.pdf,Castellano,11,Utilidades
-83,Suplemento V20 - Saber de los Clanes.pdf,Castellano,11,Suplemento
-84,Suplemento V20 - Nombres temibles - Lista Roja.pdf,Castellano,11,Suplemento
-85,Suplemento V20 - Cazadores Cazados.pdf,Castellano,11,Suplemento
-86,Suplemento V20 - Anarquistas liberados.pdf,Castellano,11,Suplemento
-87,Ficha - Clanes.pdf,Castellano,11,Utilidades
-88,Basico - Vampiro 20 Aniversario.pdf,Castellano,11,B‡sico
-89,Ayuda - Estado de Pjs.pdf,Castellano,11,Utilidades
-90,Suplemento V20 - Pantalla del Narrador.pdf,Castellano,11,Utilidades
-91,Ficha Editable El resurgir del dragón.pdf,Castellano,5,Utilidades
-92,Ficha Autocalculable El resurgir del dragón.pdf,Castellano,5,Utilidades
-93,Ficha Editable El Resurgir Del Dragon color.pdf,Castellano,5,Utilidades
-94,resurgirdeldragon-mapa-voldor.pdf,Castellano,5,Utilidades
-95,Resurgir-dragon-ficha_jugador-web-BN.pdf,Castellano,5,Utilidades
-96,Elresurgirdeldragonebook.pdf,Castellano,5,B‡sico
-97,Resurgir-dragon-ficha_jugador-web-color.pdf,Castellano,5,Utilidades
+Nombre;Idioma;Rol_Nombre;categoria;Id Rol
+Anima Beyond Fantasy - Dominus Exxet.pdf;Castellano;Anima Beyond Fantasy;Suplemento;1
+Anima Beyond Fantasy - Core Exxet.pdf;Castellano;Anima Beyond Fantasy;Basico;1
+Anima Beyond Fantasy - Arcana Exxet.pdf;Castellano;Anima Beyond Fantasy;Suplemento;1
+Ficha Extra Psiquico 2.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+Ficha Extra Psiquico 1.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+Ficha Extra Magia.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+Ficha Extra Ki.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+Ficha Extra Base.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+Ficha Ampliada.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+Ficha BlackZerg.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+Ficha Extra Convocación.pdf;Castellano;Anima Beyond Fantasy;Utilidades;1
+La Leyenda de los Cinco Anillos.pdf;Castellano;La leyenda de los 5 anillos;Basico;8
+Nuevas-tablas-de-herencia.pdf;Castellano;La leyenda de los 5 anillos;Utilidades;8
+Hoja-de-personaje.pdf;Castellano;La leyenda de los 5 anillos;Utilidades;8
+Mapa-rokugan.pdf;Castellano;La leyenda de los 5 anillos;Utilidades;8
+Tablas-de-encuentros.pdf;Castellano;La leyenda de los 5 anillos;Utilidades;8
+Tablas-de-herencia.pdf;Castellano;La leyenda de los 5 anillos;Utilidades;8
+Vampiro - Gehena, La Ultima Noche.pdf;Castellano;Vampiro la mascarada;Novela;11
+Mago - El Dia del Juicio.pdf;Castellano;Mago la ascension ;Novela;9
+Hombre Lobo - La Ultima Batalla.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+4 - Setita.pdf;Castellano;Vampiro la mascarada;Novela;11
+14 - Antologia.pdf;Castellano;Vampiro la mascarada ;Novela;11
+13 - Nosferatu.pdf;Castellano;Vampiro la mascarada ;Novela;11
+9 - Malkavian.pdf;Castellano;Vampiro la mascarada ;Novela;11
+6 - Lasombra.pdf;Castellano;Vampiro la mascarada ;Novela;11
+7 - Assamita.pdf;Castellano;Vampiro la mascarada ;Novela;11
+8 - Ravnos.pdf;Castellano;Vampiro la mascarada ;Novela;11
+2 - Tzimisce.pdf;Castellano;Vampiro la mascarada ;Novela;11
+3 - Gangrel.pdf;Castellano;Vampiro la mascarada ;Novela;11
+12 - Tremere.pdf;Castellano;Vampiro la mascarada ;Novela;11
+10 - Giovanni.pdf;Castellano;Vampiro la mascarada ;Novela;11
+11 - Brujah.pdf;Castellano;Vampiro la mascarada ;Novela;11
+5 - Ventrue.pdf;Castellano;Vampiro la mascarada ;Novela;11
+1 - Toreador.pdf;Castellano;Vampiro la mascarada ;Novela;11
+Triologia Lasombra - 2 - Sombras.pdf;Castellano;Vampiro la mascarada ;Novela;11
+Triologia Lasombra - 1 - Señales.pdf;Castellano;Vampiro la mascarada ;Novela;11
+Triologia Lasombra - 3 - Sacrificios.pdf;Castellano;Vampiro la mascarada ;Novela;11
+7 Roehuesos.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+8 Contemplaestrellas.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+9 Hijos de Gaia.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+5 Garras Rojas.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+4 Furias Negras.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+3 Caminantes Silenciosos.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+14 Wendigo.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+6 Fianna.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+2 Camada de Fenris.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+12 Moradores del Cristal.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+10 Uktena.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+11 Colmillos Plateados.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+13 Danzantes de la espiral Negra.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+1 Señores de la sombra.pdf;Castellano;Hombrelobo el apocalipsis ;Novela;7
+Hombre Lobo 20 Aniversario.pdf;Castellano;Hombrelobo el apocalipsis ;Basico;7
+Razas Cambiantes.pdf;Castellano;Hombrelobo el apocalipsis ;Suplemento;7
+Rabia por el mundo.pdf;Castellano;Hombrelobo el apocalipsis ;Suplemento;7
+Pantalla - Hombre Lobo 20 Aniversario.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Fichas - Cuaderno Razas.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Ficha - Hombre Lobo 20.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Swara.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Simba.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Rokea.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Ratkin.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Qualmi.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Pumonca.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Nuwisha.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Nagah.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Mokolé.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Kitsune.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Khan.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Gurahl.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Corax.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Ceilican.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Bubasti.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Bastet.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Balam.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Bagheera.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Ananasi.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Ajaba.pdf;Castellano;Hombrelobo el apocalipsis ;Utilidades;7
+Vampiro Edad Oscura.pdf;Castellano;Vampiro Edad Oscura;Basico;12
+Pantalla del Narrador.pdf;Castellano;Vampiro Edad Oscura;Utilidades;12
+EdadOscura-Fichas - Clanes.pdf;Castellano;Vampiro Edad Oscura;Utilidades;12
+Anexo - Glosario.pdf;Castellano;Vampiro la mascarada ;Utilidades;11
+Ficha - Básica.pdf;Castellano;Vampiro la mascarada ;Utilidades;11
+Saber de los Clanes.pdf;Castellano;Vampiro la mascarada ;Suplemento;11
+Nombres temibles - Lista Roja.pdf;Castellano;Vampiro la mascarada ;Suplemento;11
+Cazadores Cazados.pdf;Castellano;Vampiro la mascarada ;Suplemento;11
+Anarquistas liberados.pdf;Castellano;Vampiro la mascarada ;Suplemento;11
+Ficha - Clanes.pdf;Castellano;Vampiro la mascarada ;Utilidades;11
+ Vampiro 20 Aniversario.pdf;Castellano;Vampiro la mascarada ;Basico;11
+Ayuda - Estado de Pjs.pdf;Castellano;Vampiro la mascarada ;Utilidades;11
+Pantalla del Narrador.pdf;Castellano;Vampiro la mascarada ;Utilidades;11
+Ficha Editable El resurgir del dragón.pdf;Castellano;El resurgir del dragón;Utilidades;5
+Ficha Autocalculable El resurgir del dragón.pdf;Castellano;El resurgir del dragón;Utilidades;5
+Ficha Editable El Resurgir Del Dragon color.pdf;Castellano;El resurgir del dragón;Utilidades;5
+resurgirdeldragon-mapa-voldor.pdf;Castellano;El resurgir del dragón;Utilidades;5
+Resurgir-dragon-ficha_jugador-web-BN.pdf;Castellano;El resurgir del dragón;Utilidades;5
+Elresurgirdeldragonebook.pdf;Castellano;El resurgir del dragón;Basico;5
+Resurgir-dragon-ficha_jugador-web-color.pdf;Castellano;El resurgir del dragón;Utilidades;5
+D&D 4 Ed - Psionic Power.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Primal Power.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Poderes Marciales.pdf;Castellano;D&D;Suplemento;2
+D&D 4 Ed - Manual del Jugador 3.pdf;Castellano;D&D;Basico;2
+D&D 4 Ed - Manual del Jugador 2.pdf;Castellano;D&D;Basico;2
+D&D 4 Ed - Manual del Jugador 1.pdf;Castellano;D&D;Basico;2
+D&D 4 Ed - La boveda del aventurero 2.pdf;Castellano;D&D;Suplemento;2
+D&D 4 Ed - La boveda del aventurero 1.pdf;Castellano;D&D;Suplemento;2
+D&D 4 Ed - Divine Power.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Arcane Power.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Open Grave.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Monster Manual III.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Monster Manual II.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Manual de Monstruos I.pdf;Castellano;D&D;Suplemento;2
+D&D 4 Ed - Draconomicon 2.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Draconomicon 1.pdf;Inglés;D&D;Suplemento;2
+D&D 4 Ed - Manual de los Planos.pdf;Castellano;D&D;Suplemento;2
+D&D 4 Ed - Guia del Dungeon Master 2.pdf;Castellano;D&D;Basico;2
+D&D 4 Ed - Guia del Dungeon Master 1.pdf;Castellano;D&D;Basico;2
+Hoja de Personaje.pdf;Castellano;D&D;Utilidades;2
+Tipos Ataques.pdf;Castellano;D&D;Utilidades;2
+Fichas de jugador 3.5.pdf;Castellano;D&D3.5;Utilidades;3
+D&D - 3.5 - Manual del Jugador II.pdf;Castellano;D&D3.5;Basico;3
+D&D - 3.5 - Manual del Jugador I.pdf;Castellano;D&D3.5;Basico;3
+D&D - 3.5 - Manual de Psionica.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Manual de Niveles épicos.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Guia jugador de los planos.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Guia del Creador de Heroes.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Especies Salvajes.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Arcanos Desenterrados.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Tomo y Sangre.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Señores de lo Salvaje.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Puño y Espada.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - El libro de las nueve espadas.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - El Divino Completo.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - El Combatiente Completo.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - El Aventurero Completo.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - El Arcano Completo.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Defensores de la Fe.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Canción y Silencio.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Guia de Armas y Equipo.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Armas de Leyenda.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Manual de Monstruos V.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Manual de Monstruos IV.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Manual de Monstruos III.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Manual de Monstruos II.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Manual de Monstruos I.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Draconomicón.pdf;Inglés;D&D3.5;Suplemento;3
+D&D - 3.5 - Pantalla del DM.pdf;Castellano;D&D3.5;Utilidades;3
+D&D - 3.5 - Manual de los Planos.pdf;Castellano;D&D3.5;Utilidades;3
+D&D - 3.5 - La Senda de los Fantasmas.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Guía del Dungeon Master II.pdf;Castellano;D&D3.5;Basico;3
+D&D - 3.5 - Guia del Dungeon Master I.pdf;Castellano;D&D3.5;Basico;3
+D&D - 3.5 - Guia del Constructor de Fortalezas.pdf;Castellano;D&D3.5;Utilidades;3
+D&D - 3.5 - Especies Salvajes.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Entornos Urbanos.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Enemigos y Aliados.pdf;Castellano;D&D3.5;Suplemento;3
+D&D-3.5- El Libro de los desafios-Acertijos, Dungeons y Trampas.pdf;Castellano;D&D3.5;Suplemento;3
+D&D - 3.5 - Dioses y Semidioses.pdf;Castellano;D&D3.5;Suplemento;3
+FateSystemToolkit.pdf;Castellano;Fate;Basico;6
+Fate Básico.pdf;Castellano;Fate;Suplemento;6
+Dioses y Monstruos.pdf;Castellano;Fate;Suplemento;6
+Fate Basico - Resumen.pdf;Castellano;Fate;Utilidades;6
+Fate Basico - Ficha.pdf;Castellano;Fate;Utilidades;6
+Fate Basico - Fe de Erratas.pdf;Castellano;Fate;Utilidades;6
