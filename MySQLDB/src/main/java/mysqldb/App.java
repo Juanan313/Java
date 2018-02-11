@@ -1,4 +1,4 @@
-package BD;
+package mysqldb;
 
 import java.sql.Connection;
 
@@ -11,9 +11,8 @@ public class App {
         Connection conex = Conexion.conectarse(rutaConexion);
         String query = "SELECT * FROM libros";
         String queryMasters = "SELECT * FROM Master";
-        String valor = "Hombre";
-        String sql = "SELECT * FROM driverol.libros WHERE libros.rol_Nombre LIKE '%"+valor+"%'";
 
-        Query.makeAQuery(conex, sql);
+        Query.makeAQuery(conex, query);
     }
 }
+

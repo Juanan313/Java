@@ -1,0 +1,1 @@
+SELECT distinct * FROM driverol.rol inner join driverol.partida on partida.rol_Nombre = rol.Nombre;
