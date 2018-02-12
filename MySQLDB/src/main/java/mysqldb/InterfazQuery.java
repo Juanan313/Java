@@ -2,10 +2,12 @@
 package mysqldb;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -14,10 +16,11 @@ import javax.swing.table.DefaultTableModel;
  */
 public class InterfazQuery extends javax.swing.JFrame {
     String rutaConexion = "jdbc:mysql://localhost/driverol?"+"user=root&password=1234";
+    PreparedStatement ps;
     public InterfazQuery() {
         initComponents();
-        limpiar();
-        
+        txtID.setVisible(false);
+
     }
     
     /**
@@ -40,6 +43,21 @@ public class InterfazQuery extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
+        txtTitulo = new javax.swing.JTextField();
+        txtIdioma = new javax.swing.JTextField();
+        txtRolNombre = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        btnInsertLibros = new javax.swing.JButton();
+        btnModifLibros = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        btnCleanLibros = new javax.swing.JButton();
+        btnShowLibros = new javax.swing.JButton();
+        cbxCategoria = new javax.swing.JComboBox<>();
+        btnDelete = new javax.swing.JButton();
+        txtID = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -146,15 +164,132 @@ public class InterfazQuery extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Selects", jPanel1);
 
+        txtTitulo.setText("Titulo");
+        txtTitulo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTituloActionPerformed(evt);
+            }
+        });
+
+        txtIdioma.setText("Idioma");
+
+        txtRolNombre.setText("Rol");
+
+        jLabel2.setText("Titulo");
+
+        jLabel3.setText("Idioma");
+
+        jLabel4.setText("Categoria Libro");
+
+        jLabel5.setText("Juego Rol");
+
+        btnInsertLibros.setText("Insertar");
+        btnInsertLibros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsertLibrosActionPerformed(evt);
+            }
+        });
+
+        btnModifLibros.setText("Modificar");
+        btnModifLibros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModifLibrosActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Formulario Insertar y modificar Libros");
+
+        btnCleanLibros.setText("Limpiar");
+        btnCleanLibros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCleanLibrosActionPerformed(evt);
+            }
+        });
+
+        btnShowLibros.setText("Mostrar");
+        btnShowLibros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnShowLibrosActionPerformed(evt);
+            }
+        });
+
+        cbxCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elije una categoría", "Basico", "Suplemento", "Utilidades", "Novela" }));
+
+        btnDelete.setText("Eliminar");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteActionPerformed(evt);
+            }
+        });
+
+        txtID.setEnabled(false);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 948, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(btnInsertLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnModifLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnCleanLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnShowLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtIdioma, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(cbxCategoria, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtRolNombre, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtTitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(375, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 484, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnShowLibros)
+                    .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTitulo)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtIdioma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbxCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtRolNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnInsertLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModifLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCleanLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(95, 95, 95))
         );
 
         jTabbedPane1.addTab("Insertar Libros", jPanel2);
@@ -183,8 +318,11 @@ public class InterfazQuery extends javax.swing.JFrame {
 
     private void LimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimpiarActionPerformed
         campoConsultaManual.setText("Inserte aquí su consulta SQL");
-        DefaultTableModel model = null;
-        tabla.removeAll();
+        DefaultTableModel dm = (DefaultTableModel)tabla.getModel();
+        
+        while(dm.getRowCount() > 0) {
+    dm.removeRow(0);
+}
     }//GEN-LAST:event_LimpiarActionPerformed
 
     private void SelectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SelectActionPerformed
@@ -257,18 +395,134 @@ public class InterfazQuery extends javax.swing.JFrame {
     }//GEN-LAST:event_SelectActionPerformed
 
     private void campoConsultaManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoConsultaManualActionPerformed
-        // TODO add your handling code here:
+    }
+    private  void updateTextBox()
+{
+    if (consultasPredis.getSelectedIndex() == 1) {
+        campoConsultaManual.setText("SELECT * FROM libros;");
+
+    } else if (consultasPredis.getSelectedIndex() == 2) {
+        campoConsultaManual.setText("SELECT * FROM jugador;");
+    } else if (consultasPredis.getSelectedIndex() == 3) {
+        campoConsultaManual.setText("SELECT * FROM rol;");
+    } else if (consultasPredis.getSelectedIndex() == 4) {
+        campoConsultaManual.setText("SELECT * FROM partida;");
+    }
     }//GEN-LAST:event_campoConsultaManualActionPerformed
 
     private void consultasPredisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consultasPredisActionPerformed
-        // TODO add your handling code here:
+        updateTextBox();
     }//GEN-LAST:event_consultasPredisActionPerformed
-    private void limpiar(){
-        campoConsultaManual.setText("Introduce tu consulta aquí.");
+
+    private void txtTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTituloActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTituloActionPerformed
+
+    private void btnInsertLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertLibrosActionPerformed
+
+            try {
+                       Connection conex = Conexion.conectarse(rutaConexion);
+                       ps = conex.prepareStatement("INSERT INTO libros (Titulo, Idioma, categoria, rol_Nombre) VALUES (?, ?, ?, ?);");
+                       ps.setString(1, txtTitulo.getText());
+                       ps.setString(2, txtIdioma.getText());
+                       ps.setString(3, cbxCategoria.getSelectedItem().toString());
+                       ps.setString(4, txtRolNombre.getText());
+                       
+                       int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Libro añadido");
+                           limpiarCajas();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al añadir libro");
+                           limpiarCajas();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+        }
+    }//GEN-LAST:event_btnInsertLibrosActionPerformed
+
+    private void btnCleanLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleanLibrosActionPerformed
+        limpiarCajas();
+    }//GEN-LAST:event_btnCleanLibrosActionPerformed
+
+    private void btnModifLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifLibrosActionPerformed
+        
+            try {
+                       Connection conex = Conexion.conectarse(rutaConexion);
+                       ps = conex.prepareStatement("UPDATE libros SET Titulo=?, Idioma=?, categoria=?, rol_Nombre=? WHERE idLibros = ?");
+                       ps.setString(1, txtTitulo.getText());
+                       ps.setString(2, txtIdioma.getText());
+                       ps.setString(3, cbxCategoria.getSelectedItem().toString());
+                       ps.setString(4, txtRolNombre.getText());
+                       ps.setString(5, txtID.getText());
+                       
+                       int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Libro modificado");
+                           limpiarCajas();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al modificar libro");
+                           limpiarCajas();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+        }
+    }//GEN-LAST:event_btnModifLibrosActionPerformed
+
+    private void btnShowLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowLibrosActionPerformed
+
+        try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ResultSet result = null;
+            ps = conex.prepareStatement("SELECT * FROM libros WHERE Titulo = ?");
+            ps.setString(1, txtTitulo.getText());
+            result = ps.executeQuery();
+            if (result.next()) {
+                txtTitulo.setText(result.getString("Titulo"));
+                txtIdioma.setText(result.getString("Idioma"));
+                txtRolNombre.setText(result.getString("rol_Nombre"));
+                cbxCategoria.setSelectedItem(result.getString("categoria"));
+                txtID.setText(result.getString("idLibros"));
+               
+            } else {
+                JOptionPane.showInputDialog(null, "No existe libro con ese Titulo!!");
+            }
+        }catch (Exception e) {
+                System.err.print(e);
+        }
+    }//GEN-LAST:event_btnShowLibrosActionPerformed
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+         try {
+                       Connection conex = Conexion.conectarse(rutaConexion);
+                       ps = conex.prepareStatement("DELETE FROM libros WHERE idLibros = ?");
+                       ps.setInt(1,Integer.parseInt(txtID.getText()));
+                       
+                       int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Libro eliminado");
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al eliminar libro");
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+        }                                  
+    }//GEN-LAST:event_btnDeleteActionPerformed
+    private void limpiarCajas() {
+        txtTitulo.setText(null);
+        txtIdioma.setText(null);
+        txtRolNombre.setText(null);
+        cbxCategoria.setSelectedIndex(0);
     }
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -277,7 +531,7 @@ public class InterfazQuery extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -305,13 +559,28 @@ public class InterfazQuery extends javax.swing.JFrame {
     private javax.swing.JButton Cerrar;
     private javax.swing.JButton Limpiar;
     private javax.swing.JButton Select;
+    private javax.swing.JButton btnCleanLibros;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnInsertLibros;
+    private javax.swing.JButton btnModifLibros;
+    private javax.swing.JButton btnShowLibros;
     private javax.swing.JTextField campoConsultaManual;
+    private javax.swing.JComboBox<String> cbxCategoria;
     private javax.swing.JComboBox<String> consultasPredis;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable tabla;
+    private javax.swing.JTextField txtID;
+    private javax.swing.JTextField txtIdioma;
+    private javax.swing.JTextField txtRolNombre;
+    private javax.swing.JTextField txtTitulo;
     // End of variables declaration//GEN-END:variables
 }
