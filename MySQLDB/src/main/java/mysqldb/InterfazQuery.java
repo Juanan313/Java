@@ -20,6 +20,10 @@ public class InterfazQuery extends javax.swing.JFrame {
     public InterfazQuery() {
         initComponents();
         txtID.setVisible(false);
+        txtIDJugador.setVisible(false);
+        txtIDPartida.setVisible(false);
+        txtIDRol.setVisible(false);
+        
 
     }
     
@@ -58,6 +62,48 @@ public class InterfazQuery extends javax.swing.JFrame {
         cbxCategoria = new javax.swing.JComboBox<>();
         btnDelete = new javax.swing.JButton();
         txtID = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        txtApodo = new javax.swing.JTextField();
+        txtNombreJugador = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        btnInsertJugador = new javax.swing.JButton();
+        btnModifJugador = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        btnCleanJugador = new javax.swing.JButton();
+        btnShowJugador = new javax.swing.JButton();
+        btnDeleteJugador = new javax.swing.JButton();
+        txtIDJugador = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        txtROL = new javax.swing.JTextField();
+        txtEdicion = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        btnInsertRol = new javax.swing.JButton();
+        btnModifRol = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        btnCleanRol = new javax.swing.JButton();
+        btnShowRol = new javax.swing.JButton();
+        btnDeleteRol = new javax.swing.JButton();
+        txtIDRol = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        cbxEpoca = new javax.swing.JComboBox<>();
+        jPanel5 = new javax.swing.JPanel();
+        txtCronica = new javax.swing.JTextField();
+        txtNumJugador = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        btnInsertPartida = new javax.swing.JButton();
+        btnModifPartida = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        btnCleanPartida = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        btnDeletePartida = new javax.swing.JButton();
+        btnShowPartida = new javax.swing.JButton();
+        txtRolPartida = new javax.swing.JTextField();
+        txtIDPartida = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -122,21 +168,22 @@ public class InterfazQuery extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(consultasPredis, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 98, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(Select, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
                                 .addComponent(Limpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(18, 18, 18)
                                 .addComponent(Cerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6))
+                                .addGap(20, 20, 20))
                             .addComponent(campoConsultaManual))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -148,7 +195,7 @@ public class InterfazQuery extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(consultasPredis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -183,6 +230,7 @@ public class InterfazQuery extends javax.swing.JFrame {
 
         jLabel5.setText("Juego Rol");
 
+        btnInsertLibros.setBackground(new java.awt.Color(0, 153, 255));
         btnInsertLibros.setText("Insertar");
         btnInsertLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,6 +238,7 @@ public class InterfazQuery extends javax.swing.JFrame {
             }
         });
 
+        btnModifLibros.setBackground(new java.awt.Color(51, 255, 255));
         btnModifLibros.setText("Modificar");
         btnModifLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,6 +248,7 @@ public class InterfazQuery extends javax.swing.JFrame {
 
         jLabel6.setText("Formulario Insertar y modificar Libros");
 
+        btnCleanLibros.setBackground(new java.awt.Color(0, 204, 102));
         btnCleanLibros.setText("Limpiar");
         btnCleanLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,6 +265,7 @@ public class InterfazQuery extends javax.swing.JFrame {
 
         cbxCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elije una categoría", "Basico", "Suplemento", "Utilidades", "Novela" }));
 
+        btnDelete.setBackground(new java.awt.Color(255, 51, 51));
         btnDelete.setText("Eliminar");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,13 +345,441 @@ public class InterfazQuery extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Insertar Libros", jPanel2);
 
+        txtApodo.setText("Apodo Jugador");
+        txtApodo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApodoActionPerformed(evt);
+            }
+        });
+
+        txtNombreJugador.setText("Nombre Jugador");
+
+        jLabel7.setText("Apodo");
+
+        jLabel8.setText("Nombre");
+
+        btnInsertJugador.setBackground(new java.awt.Color(0, 153, 255));
+        btnInsertJugador.setText("Insertar");
+        btnInsertJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsertJugadorActionPerformed(evt);
+            }
+        });
+
+        btnModifJugador.setBackground(new java.awt.Color(51, 255, 255));
+        btnModifJugador.setText("Modificar");
+        btnModifJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModifJugadorActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Formulario Insertar y modificar Jugador");
+
+        btnCleanJugador.setBackground(new java.awt.Color(0, 255, 102));
+        btnCleanJugador.setText("Limpiar");
+        btnCleanJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCleanJugadorActionPerformed(evt);
+            }
+        });
+
+        btnShowJugador.setText("Mostrar");
+        btnShowJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnShowJugadorActionPerformed(evt);
+            }
+        });
+
+        btnDeleteJugador.setBackground(new java.awt.Color(255, 51, 0));
+        btnDeleteJugador.setText("Eliminar");
+        btnDeleteJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteJugadorActionPerformed(evt);
+            }
+        });
+
+        txtIDJugador.setEnabled(false);
+        txtIDJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIDJugadorActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addComponent(txtIDJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnShowJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtNombreJugador, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(txtApodo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(btnInsertJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnModifJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnCleanJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDeleteJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(375, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnShowJugador)
+                    .addComponent(txtIDJugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtApodo)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNombreJugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnInsertJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModifJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCleanJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDeleteJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(174, 174, 174))
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1133, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 512, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jTabbedPane1.addTab("Insertar Jugador", jPanel3);
+
+        txtROL.setText("Nombre del juego de Rol.");
+        txtROL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtROLActionPerformed(evt);
+            }
+        });
+
+        txtEdicion.setText("Edición.");
+        txtEdicion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEdicionActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Nombre");
+
+        jLabel10.setText("Edición");
+
+        btnInsertRol.setBackground(new java.awt.Color(0, 153, 204));
+        btnInsertRol.setText("Insertar");
+        btnInsertRol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsertRolActionPerformed(evt);
+            }
+        });
+
+        btnModifRol.setBackground(new java.awt.Color(51, 255, 255));
+        btnModifRol.setText("Modificar");
+        btnModifRol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModifRolActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setText("Formulario Insertar y modificar Rol");
+
+        btnCleanRol.setBackground(new java.awt.Color(0, 255, 102));
+        btnCleanRol.setText("Limpiar");
+        btnCleanRol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCleanRolActionPerformed(evt);
+            }
+        });
+
+        btnShowRol.setText("Mostrar");
+        btnShowRol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnShowRolActionPerformed(evt);
+            }
+        });
+
+        btnDeleteRol.setBackground(new java.awt.Color(255, 51, 0));
+        btnDeleteRol.setText("Eliminar");
+        btnDeleteRol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteRolActionPerformed(evt);
+            }
+        });
+
+        txtIDRol.setEnabled(false);
+        txtIDRol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIDRolActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setText("Época");
+
+        cbxEpoca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elige la época en la que esta Ambientado.", "Actual", "Medieval", "Futuro", "Contemporaneo", "*" }));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .addComponent(txtIDRol, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnShowRol, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtEdicion)
+                    .addComponent(txtROL)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(btnInsertRol, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnModifRol, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnCleanRol, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnDeleteRol, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbxEpoca, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(375, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnShowRol)
+                    .addComponent(txtIDRol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtROL)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtEdicion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbxEpoca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnInsertRol, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModifRol, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCleanRol, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDeleteRol, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(137, 137, 137))
+        );
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1133, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 512, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jTabbedPane1.addTab("Insertar Rol", jPanel4);
+
+        txtCronica.setText("Nombre de la partida.");
+        txtCronica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCronicaActionPerformed(evt);
+            }
+        });
+
+        txtNumJugador.setText("Cuantos jugadores.");
+        txtNumJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNumJugadorActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setText("Cronica");
+
+        jLabel15.setText("Nº de Jugadores");
+
+        btnInsertPartida.setBackground(new java.awt.Color(0, 153, 204));
+        btnInsertPartida.setText("Insertar");
+        btnInsertPartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsertPartidaActionPerformed(evt);
+            }
+        });
+
+        btnModifPartida.setBackground(new java.awt.Color(102, 255, 255));
+        btnModifPartida.setText("Modificar");
+        btnModifPartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModifPartidaActionPerformed(evt);
+            }
+        });
+
+        jLabel16.setText("Formulario Insertar y modificar Partida");
+
+        btnCleanPartida.setBackground(new java.awt.Color(0, 255, 102));
+        btnCleanPartida.setText("Limpiar");
+        btnCleanPartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCleanPartidaActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setText("Juego de Rol");
+
+        btnDeletePartida.setBackground(new java.awt.Color(255, 51, 0));
+        btnDeletePartida.setText("Eliminar");
+        btnDeletePartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeletePartidaActionPerformed(evt);
+            }
+        });
+
+        btnShowPartida.setText("Mostrar");
+        btnShowPartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnShowPartidaActionPerformed(evt);
+            }
+        });
+
+        txtRolPartida.setText("De que juego es la partida.");
+
+        txtIDPartida.setEnabled(false);
+        txtIDPartida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIDPartidaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(81, 81, 81)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtIDPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel5Layout.createSequentialGroup()
+                                    .addComponent(btnInsertPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(btnModifPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(btnCleanPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(btnDeletePartida, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                                    .addGap(53, 53, 53)
+                                    .addComponent(btnShowPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtNumJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtCronica, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtRolPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(336, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnShowPartida)
+                    .addComponent(txtIDPartida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCronica)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNumJugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtRolPartida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnInsertPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModifPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCleanPartida, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDeletePartida, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(145, 145, 145))
+        );
+
+        jTabbedPane1.addTab("Insertar Partida", jPanel5);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jTabbedPane1)
-                .addContainerGap())
+                .addGap(16, 16, 16))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -431,10 +910,10 @@ public class InterfazQuery extends javax.swing.JFrame {
                        int res = ps.executeUpdate();
                        if (res >0) {
                            JOptionPane.showInputDialog(null, "Libro añadido");
-                           limpiarCajas();
+                           limpiarCajasLibros();
                        } else {
                            JOptionPane.showInputDialog(null, "Error al añadir libro");
-                           limpiarCajas();
+                           limpiarCajasLibros();
                        }
                        
                        conex.close();
@@ -445,7 +924,7 @@ public class InterfazQuery extends javax.swing.JFrame {
     }//GEN-LAST:event_btnInsertLibrosActionPerformed
 
     private void btnCleanLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleanLibrosActionPerformed
-        limpiarCajas();
+        limpiarCajasLibros();
     }//GEN-LAST:event_btnCleanLibrosActionPerformed
 
     private void btnModifLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifLibrosActionPerformed
@@ -462,16 +941,17 @@ public class InterfazQuery extends javax.swing.JFrame {
                        int res = ps.executeUpdate();
                        if (res >0) {
                            JOptionPane.showInputDialog(null, "Libro modificado");
-                           limpiarCajas();
+                           limpiarCajasLibros();
                        } else {
                            JOptionPane.showInputDialog(null, "Error al modificar libro");
-                           limpiarCajas();
+                           limpiarCajasLibros();
                        }
                        
                        conex.close();
                        
         } catch (Exception e) {
                 System.err.print(e);
+                JOptionPane.showInputDialog(null, "Error: "+e);
         }
     }//GEN-LAST:event_btnModifLibrosActionPerformed
 
@@ -480,7 +960,7 @@ public class InterfazQuery extends javax.swing.JFrame {
         try {
             Connection conex = Conexion.conectarse(rutaConexion);
             ResultSet result = null;
-            ps = conex.prepareStatement("SELECT * FROM libros WHERE Titulo = ?");
+            ps = conex.prepareStatement("SELECT * FROM libros WHERE Titulo LIKE  ?");
             ps.setString(1, txtTitulo.getText());
             result = ps.executeQuery();
             if (result.next()) {
@@ -517,12 +997,346 @@ public class InterfazQuery extends javax.swing.JFrame {
                 System.err.print(e);
         }                                  
     }//GEN-LAST:event_btnDeleteActionPerformed
-    private void limpiarCajas() {
-        txtTitulo.setText(null);
-        txtIdioma.setText(null);
-        txtRolNombre.setText(null);
+
+    private void txtApodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApodoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApodoActionPerformed
+
+    private void btnInsertJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertJugadorActionPerformed
+         try {
+                       Connection conex = Conexion.conectarse(rutaConexion);
+                       ps = conex.prepareStatement("INSERT INTO jugador (Apodo, Nombre) VALUES (?, ?);");
+                       ps.setString(1,txtApodo.getText());
+                       ps.setString(2,txtNombreJugador.getText());
+                       int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Jugador añadido");
+                           limpiarCajasJugador();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al añadir Jugador");
+                           limpiarCajasJugador();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+        }
+    }//GEN-LAST:event_btnInsertJugadorActionPerformed
+
+    private void btnModifJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifJugadorActionPerformed
+             try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ps = conex.prepareStatement("UPDATE jugador SET Apodo=?, Nombre=? WHERE idJugador = ?");
+            ps.setString(1, txtApodo.getText());
+            ps.setString(2, txtNombreJugador.getText());
+            ps.setString(3, txtIDJugador.getText());
+            
+            int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Jugador modificado");
+                           limpiarCajasJugador();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al modificar Jugador");
+                           limpiarCajasJugador();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+                JOptionPane.showInputDialog(null, "Error: "+e);
+        }
+    }//GEN-LAST:event_btnModifJugadorActionPerformed
+
+    private void btnCleanJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleanJugadorActionPerformed
+       limpiarCajasJugador();
+    }//GEN-LAST:event_btnCleanJugadorActionPerformed
+
+    private void btnShowJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowJugadorActionPerformed
+           try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ResultSet result = null;
+            ps = conex.prepareStatement("SELECT * FROM jugador WHERE Apodo LIKE  ?");
+            ps.setString(1, txtApodo.getText());
+            result = ps.executeQuery();
+            if (result.next()) {
+                txtApodo.setText(result.getString("Apodo"));
+                txtNombreJugador.setText(result.getString("Nombre"));
+                txtIDJugador.setText(result.getString("idJugador"));
+               
+            } else {
+                JOptionPane.showInputDialog(null, "No existe un Jugador con ese Apodo!!");
+            }
+        }catch (Exception e) {
+                System.err.print(e);
+        }                                         
+    }//GEN-LAST:event_btnShowJugadorActionPerformed
+
+    private void btnDeleteJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteJugadorActionPerformed
+        try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ps = conex.prepareStatement("DELETE FROM jugador WHERE idJugador = ?");
+            ps.setString(1, txtIDJugador.getText());
+            
+            int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Jugador eliminado");
+                           limpiarCajasRol();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al eliminar Jugador");
+                           limpiarCajasRol();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+                JOptionPane.showInputDialog(null, "Error: "+e);
+        }
+    }//GEN-LAST:event_btnDeleteJugadorActionPerformed
+
+    private void txtIDJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIDJugadorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIDJugadorActionPerformed
+
+    private void txtROLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtROLActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtROLActionPerformed
+
+    private void btnInsertRolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertRolActionPerformed
+         try {
+                       Connection conex = Conexion.conectarse(rutaConexion);
+                       ps = conex.prepareStatement("INSERT INTO rol (Nombre, Edición, Época) VALUES (?, ?, ?);");
+                       ps.setString(1,txtROL.getText());
+                       ps.setString(2,txtEdicion.getText());
+                       ps.setString(3,cbxEpoca.getSelectedItem().toString());
+                       
+                       int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Rol añadido");
+                           limpiarCajasRol();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al añadir Rol");
+                           limpiarCajasRol();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+        }
+    }//GEN-LAST:event_btnInsertRolActionPerformed
+
+    private void btnModifRolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifRolActionPerformed
+        try {
+                       Connection conex = Conexion.conectarse(rutaConexion);
+                       ps = conex.prepareStatement("UPDATE rol SET Nombre= ?, Edición = ?, Época =? WHERE idRol = ?");
+                       ps.setString(1,txtROL.getText());
+                       ps.setString(2,txtEdicion.getText());
+                       ps.setString(3,cbxEpoca.getSelectedItem().toString());
+                       ps.setString(4,txtIDRol.getText());
+                       int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Rol modificado");
+                           limpiarCajasRol();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al modificar Rol");
+                           limpiarCajasRol();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+        }
+    }//GEN-LAST:event_btnModifRolActionPerformed
+
+    private void btnCleanRolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleanRolActionPerformed
+        limpiarCajasRol();
+    }//GEN-LAST:event_btnCleanRolActionPerformed
+
+    private void btnShowRolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowRolActionPerformed
+          try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ResultSet result = null;
+            ps = conex.prepareStatement("SELECT * FROM rol WHERE Cronica =  ?");
+            ps.setString(1, txtROL.getText());
+            result = ps.executeQuery();
+            if (result.next()) {
+                txtROL.setText(result.getString("Nombre"));
+                txtEdicion.setText(result.getString("Edición"));
+                cbxEpoca.setSelectedItem(result.getString("Época"));
+                txtIDRol.setText(result.getString("idRol"));
+               
+            } else {
+                JOptionPane.showInputDialog(null, "No existe un Rol con ese Nombre!!");
+            }
+        }catch (Exception e) {
+                System.err.print(e);
+        }                     
+    }//GEN-LAST:event_btnShowRolActionPerformed
+
+    private void btnDeleteRolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteRolActionPerformed
+        try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ps = conex.prepareStatement("DELETE FROM rol WHERE idRol =  ?");
+            ps.setString(1, txtIDRol.getText());
+             int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Rol eliminado");
+                           limpiarCajasRol();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al eliminar Rol");
+                           limpiarCajasRol();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+                JOptionPane.showInputDialog(null, "Error: "+e);
+        }
+    }//GEN-LAST:event_btnDeleteRolActionPerformed
+
+    private void txtIDRolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIDRolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIDRolActionPerformed
+
+    private void txtEdicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEdicionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEdicionActionPerformed
+
+    private void txtCronicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCronicaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCronicaActionPerformed
+
+    private void txtNumJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumJugadorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNumJugadorActionPerformed
+
+    private void btnInsertPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertPartidaActionPerformed
+       try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ps = conex.prepareStatement("INSERT INTO partida (Cronica,Jugadores,rol_Nombre) VALUES (?,?,?)"); 
+            ps.setString(1, txtCronica.getText());
+            ps.setString(2, txtNumJugador.getText());
+            ps.setString(3, txtRolPartida.getText());
+            
+             int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Partida añadida");
+                           limpiarCajasPartida();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al añadir Partida");
+                          limpiarCajasPartida();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+                JOptionPane.showInputDialog(null, "Error: "+e);
+        }
+    }//GEN-LAST:event_btnInsertPartidaActionPerformed
+
+    private void btnModifPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModifPartidaActionPerformed
+        try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ps = conex.prepareStatement("UPADTE partida SET Cronica=? Jugadores= ? rol_Nombre= ? WHERE idPartida = ?"); 
+            ps.setString(1, txtCronica.getText());
+            ps.setString(2, txtNumJugador.getText());
+            ps.setString(3, txtRolPartida.getText());
+            ps.setString(4, txtIDPartida.getText());
+            
+             int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Partida modificada");
+                           limpiarCajasPartida();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al modificar Partida");
+                          limpiarCajasPartida();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+                JOptionPane.showInputDialog(null, "Error: "+e);
+        }
+    }//GEN-LAST:event_btnModifPartidaActionPerformed
+
+    private void btnCleanPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCleanPartidaActionPerformed
+        limpiarCajasPartida();
+    }//GEN-LAST:event_btnCleanPartidaActionPerformed
+
+    private void btnShowPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowPartidaActionPerformed
+        try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ResultSet result = null;
+            ps = conex.prepareStatement("SELECT * FROM partida WHERE Cronica =  ?");
+            ps.setString(1, txtCronica.getText());
+            result = ps.executeQuery();
+            if (result.next()) {
+                txtCronica.setText(result.getString("Cronica"));
+                txtNumJugador.setText(result.getString("Jugadores"));
+                txtRolPartida.setText(result.getString("rol_Nombre"));
+                txtIDPartida.setText(result.getString("idPartida"));
+               
+            } else {
+                JOptionPane.showInputDialog(null, "No existe una Partida con ese Nombre!!");
+            }
+        }catch (Exception e) {
+                System.err.print(e);
+        }                
+    }//GEN-LAST:event_btnShowPartidaActionPerformed
+
+    private void btnDeletePartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletePartidaActionPerformed
+        try {
+            Connection conex = Conexion.conectarse(rutaConexion);
+            ps = conex.prepareStatement("DELETE FROM partida WHERE idPartida =  ?");
+            ps.setString(1, txtIDPartida.getText());
+             int res = ps.executeUpdate();
+                       if (res >0) {
+                           JOptionPane.showInputDialog(null, "Partida eliminada");
+                           limpiarCajasPartida();
+                       } else {
+                           JOptionPane.showInputDialog(null, "Error al eliminar Partida");
+                          limpiarCajasPartida();
+                       }
+                       
+                       conex.close();
+                       
+        } catch (Exception e) {
+                System.err.print(e);
+                JOptionPane.showInputDialog(null, "Error: "+e);
+        }
+    }//GEN-LAST:event_btnDeletePartidaActionPerformed
+
+    private void txtIDPartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIDPartidaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIDPartidaActionPerformed
+    private void limpiarCajasLibros() {
+        txtTitulo.setText("Titulo del libro");
+        txtIdioma.setText("Idioma");
+        txtRolNombre.setText("Nombre del Juego de Rol");
         cbxCategoria.setSelectedIndex(0);
     }
+    private void limpiarCajasJugador() {
+        txtNombreJugador.setText("Nombre del Jugador");
+        txtApodo.setText("Apodo del Jugador");
+    }
+    private void limpiarCajasRol() {
+        txtROL.setText("Nombre del juego de rol");
+        txtEdicion.setText("Edicion del rol ");
+        cbxEpoca.setSelectedIndex(0);
+    }
+    private void limpiarCajasPartida() {
+        txtCronica.setText("Nombre de la Cronica");
+        txtRolPartida.setText("Juego de Rol de esta partida");
+        txtNumJugador.setText("Numero de Jugadores que participan");
+    }
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -531,7 +1345,7 @@ public class InterfazQuery extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
+                if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -559,28 +1373,70 @@ public class InterfazQuery extends javax.swing.JFrame {
     private javax.swing.JButton Cerrar;
     private javax.swing.JButton Limpiar;
     private javax.swing.JButton Select;
+    private javax.swing.JButton btnCleanJugador;
     private javax.swing.JButton btnCleanLibros;
+    private javax.swing.JButton btnCleanPartida;
+    private javax.swing.JButton btnCleanRol;
     private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnDeleteJugador;
+    private javax.swing.JButton btnDeletePartida;
+    private javax.swing.JButton btnDeleteRol;
+    private javax.swing.JButton btnInsertJugador;
     private javax.swing.JButton btnInsertLibros;
+    private javax.swing.JButton btnInsertPartida;
+    private javax.swing.JButton btnInsertRol;
+    private javax.swing.JButton btnModifJugador;
     private javax.swing.JButton btnModifLibros;
+    private javax.swing.JButton btnModifPartida;
+    private javax.swing.JButton btnModifRol;
+    private javax.swing.JButton btnShowJugador;
     private javax.swing.JButton btnShowLibros;
+    private javax.swing.JButton btnShowPartida;
+    private javax.swing.JButton btnShowRol;
     private javax.swing.JTextField campoConsultaManual;
     private javax.swing.JComboBox<String> cbxCategoria;
+    private javax.swing.JComboBox<String> cbxEpoca;
     private javax.swing.JComboBox<String> consultasPredis;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable tabla;
+    private javax.swing.JTextField txtApodo;
+    private javax.swing.JTextField txtCronica;
+    private javax.swing.JTextField txtEdicion;
     private javax.swing.JTextField txtID;
+    private javax.swing.JTextField txtIDJugador;
+    private javax.swing.JTextField txtIDPartida;
+    private javax.swing.JTextField txtIDRol;
     private javax.swing.JTextField txtIdioma;
+    private javax.swing.JTextField txtNombreJugador;
+    private javax.swing.JTextField txtNumJugador;
+    private javax.swing.JTextField txtROL;
     private javax.swing.JTextField txtRolNombre;
+    private javax.swing.JTextField txtRolPartida;
     private javax.swing.JTextField txtTitulo;
     // End of variables declaration//GEN-END:variables
 }
