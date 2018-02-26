@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
  * @author Juanan
  */
 public class InterfazQuery extends javax.swing.JFrame {
-    String rutaConexion = "jdbc:mysql://localhost/driverol?"+"user=root&password=1234";
+    String rutaConexion = "jdbc:mysql://localhost/bdproject?useSSL=false&"+"user=juanan&password=1234";
     PreparedStatement ps;
     public InterfazQuery() {
         initComponents();
