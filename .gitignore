@@ -1,8 +1,14 @@
 
-
+# ignore todos los Archivos .class
 *.class
+target/
 
+# ignore todos los archivos en la carpeta settings
 .settings/
 
+# ignore archivos configuracion vscode
 .vscode/
-target/
+
+# IDE
+.classpath
+.project
