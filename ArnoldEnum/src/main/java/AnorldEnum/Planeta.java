@@ -12,6 +12,7 @@ public enum Planeta {
 
     private double masa;
     private double radio;
+    private double G = 6.67300E-11;
 
     private Planeta(double masa, double radio) {
         this.masa = masa;
@@ -25,5 +26,44 @@ public enum Planeta {
     public double getRadio() {
         return radio;
     }
-    
+
+	public double getG() {
+		return G;
+	}
+
+    public double calcularGravedadSuperficial() {
+        return G * getMasa() / (getRadio()*getRadio());
+    }
+
+    public double getMasaHumano(double pesoHumano) {
+        return pesoHumano / EARTH.calcularGravedadSuperficial();
+    }
+
+    public double pesoSuperficie(double pesoHumano) {
+        double masaHumano = getMasaHumano(pesoHumano);
+        return masaHumano * calcularGravedadSuperficial();
+    }
+
+    public static Planeta[] getPlanetasTerrestres() {
+
+        Planeta[] planetasTerrestres = new Planeta[4];
+
+        for (int i = Planeta.MERCURY.ordinal(); i < Planeta.JUPITER.ordinal(); i++) {
+			planetasTerrestres[i] = Planeta.values()[i];
+		}
+
+        return planetasTerrestres;
+    }
+
+    public static Planeta[] getGigantesGaseosos() {
+
+        Planeta[] gigantesGaseosos = new Planeta[4];
+
+        byte index = 0;
+		for (int i = Planeta.JUPITER.ordinal(); i <= Planeta.NEPTUNE.ordinal(); i++) {
+			gigantesGaseosos[index] = Planeta.values()[i];
+			index += 1;
+        }
+        return gigantesGaseosos;
+    }
 }
