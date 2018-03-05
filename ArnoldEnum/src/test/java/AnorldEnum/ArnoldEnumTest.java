@@ -51,7 +51,8 @@ public class ArnoldEnumTest {
 	@Test
 	public void PlanetaNamesIteratorTest() {
 		for (Planeta planeta : Planeta.values()) {
-			assertThat(planeta.name()).isIn(planetas.toString());
+			assertThat(planeta.name()).isIn(planetas);
+			
 		}
 	}
 
@@ -75,7 +76,7 @@ public class ArnoldEnumTest {
 		assertThat(planetasIncluidos).isEqualTo(4);
 
 		for (Planeta planeta : Planeta.getPlanetasTerrestres()) {
-			assertThat(planeta.name()).isIn(planetasTerrestres.toString());
+			assertThat(planeta.name()).isIn(planetasTerrestres);
 		}
 	}
 
