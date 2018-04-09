@@ -16,7 +16,7 @@ public class DNI {
     static String getDniDigits(String dni) {
 
         String digits = "";
-        for (int i = 0, n = 8; i < n; i++) {
+        for (int i = 0, n = 9; i < n; i++) {
             char character = dni.charAt(i);
             digits+= character;
         }

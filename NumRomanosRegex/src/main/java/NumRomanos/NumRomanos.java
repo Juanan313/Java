@@ -17,9 +17,4 @@ public enum NumRomanos {
 		return valorDecimal;
 	}
 
-	public void setValorDecimal(int valorDecimal) {
-		this.valorDecimal = valorDecimal;
-	}
-
-    
 }
