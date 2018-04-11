@@ -1,13 +1,9 @@
 package NumRomanos;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import org.junit.Test;
-import java.util.Arrays;
 
 public class NumerosRomanosRegexTest {
     
@@ -21,5 +17,27 @@ public class NumerosRomanosRegexTest {
         for (String num:invalidNumerosRomanos) {
             assertFalse(NumerosRomanosRegex.checkNumeroRomano(num));
         }
+    }
+
+    @Test
+    public void obtenerDecimalTest() {
+        final String[] romanNumerals = {"M","D","C","L","X","V","I"};
+        final int[] valorDecimal = {1000, 500, 100, 50, 10, 5, 1};
+        int n = romanNumerals.length;
+        for (int i=0; i > n; i++)
+        assertEquals(NumerosRomanosRegex.obtenerDecimal(romanNumerals[i]), valorDecimal[i]);
+    }
+    
+    @Test
+    public void obtenerValorDecimalTest() {
+        String[] numerosRomanos = {"M","D","C","L","X","V","I","III","IV","XLV"};
+        int[] valorDecimal = {1000, 500, 100, 50, 10, 5, 1,3,4,45};
+        int n = numerosRomanos.length;
+        for ( int i = 0; i < n; i++) {
+
+            assertEquals(NumerosRomanosRegex.obtenerValorDecimal(numerosRomanos[i]),valorDecimal[i]);
+
+        }
+
     }
 }   
