@@ -115,6 +115,9 @@ public class Persona {
 
 		public Builder setLugarTrabajo(String lugarTrabajo) {
 
+			if (!persona.isMayorEdad()) {
+				throw new IllegalArgumentException("es menor de edad " + persona.edad);
+			}
 			persona.lugarTrabajo = lugarTrabajo;
 			return this;
 		}
@@ -131,7 +134,9 @@ public class Persona {
 		}
 
 		public Builder setColegio(String colegio) {
-
+			if (persona.isMayorEdad()) {
+				throw new IllegalArgumentException("es mayor de edad " + persona.edad);
+			}
 			persona.colegio = colegio;
 			return this;
 		}

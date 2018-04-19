@@ -26,11 +26,11 @@ public class Main {
 		System.out.println(hijo.toString());
 		System.out.println("/----------------------/");
 		// esta codigo NO debe compilar
-		/*
+		
 		Persona mal = new Persona.Builder("Luisa")
 				    .setMayor(20)
 				    .setColegio("Colegio de Villa Arriba")
 				    .build();
-        */
+
 	}
 }
