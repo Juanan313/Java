@@ -89,6 +89,8 @@ public class Persona {
 		}
 	}
 
+	// Inner class Builder --> Top level por ser Static
+
 	public static class Builder {
 		private Persona persona;
 
@@ -104,13 +106,12 @@ public class Persona {
 
 		// Setters Mayor Edad
 
-		public Builder setMayor(int edad) {
+		public BuildMayor setMayor(int edad) {
 			if (edad < 18)
 				throw new IllegalArgumentException("es menor de edad " + edad);
-			persona.edad = edad;
-			persona.colegio = null;
-			persona.mayorEdad = true;
-			return this;
+			BuildMayor constructorAdulto = new BuildMayor(persona);
+			constructorAdulto.setMayor(edad);
+			return constructorAdulto;
 		}
 
 		public Builder setLugarTrabajo(String lugarTrabajo) {
@@ -124,13 +125,12 @@ public class Persona {
 
 		//Setter Menor Edad
 
-		public Builder setMenor(int edad) {
-			if (edad >= 18)
-				throw new IllegalArgumentException("es mayor de edad " + edad);
-			persona.edad = edad;
-			persona.lugarTrabajo = null;
-			persona.mayorEdad = false;
-			return this;
+		public BuildMenor setMenor(int edad) {
+				if (edad > 18)
+					throw new IllegalArgumentException("es mayor de edad " + edad);
+				BuildMenor constructorMenor = persona.new BuildMenor(persona);
+				constructorMenor.setMenor(edad);
+				return constructorMenor;
 		}
 
 		public Builder setColegio(String colegio) {
@@ -145,6 +145,59 @@ public class Persona {
 			return persona;
 		}
 
+	}
+
+	public static class BuildMayor {
+		private Persona personaAdulta;
+
+		public BuildMayor(Persona persona) {
+			personaAdulta = persona;
+		}
+
+		public BuildMayor setMayor(int edad) {
+			personaAdulta.edad = edad;
+			personaAdulta.colegio = null;
+			personaAdulta.mayorEdad = true;
+			return this;
+		}
+
+		public BuildMayor setLugarTrabajo(String lugarTrabajo) {
+			personaAdulta.setLugarTrabajo(lugarTrabajo);
+			return this;
+		}
+
+		public Persona build() {
+			return personaAdulta;
+		}
+	}
+
+	public class BuildMenor {
+
+		private Persona personaMenor;
+
+		public BuildMenor(Persona persona) {
+			personaMenor = persona;
+		}
+
+		public BuildMenor setMenor(int edad) {
+			if (edad >= 18)
+				throw new IllegalArgumentException("es mayor de edad " + edad);
+			personaMenor.edad = edad;
+			personaMenor.lugarTrabajo = null;
+			personaMenor.mayorEdad = false;
+
+			return this;
+		}
+
+		public BuildMenor setColegio(String colegio) {
+			personaMenor.colegio = colegio;
+			return this;
+		}
+
+		public Persona build() {
+			return personaMenor;
+		}
+		
 	}
 
 }
