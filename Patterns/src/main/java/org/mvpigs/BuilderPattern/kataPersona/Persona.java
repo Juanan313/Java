@@ -114,14 +114,14 @@ public class Persona {
 			return constructorAdulto;
 		}
 
-		public Builder setLugarTrabajo(String lugarTrabajo) {
+		// public Builder setLugarTrabajo(String lugarTrabajo) {
 
-			if (!persona.isMayorEdad()) {
-				throw new IllegalArgumentException("es menor de edad " + persona.edad);
-			}
-			persona.lugarTrabajo = lugarTrabajo;
-			return this;
-		}
+		// 	if (!persona.isMayorEdad()) {
+		// 		throw new IllegalArgumentException("es menor de edad " + persona.edad);
+		// 	}
+		// 	persona.lugarTrabajo = lugarTrabajo;
+		// 	return this;
+		// }
 
 		//Setter Menor Edad
 
@@ -133,13 +133,13 @@ public class Persona {
 				return constructorMenor;
 		}
 
-		public Builder setColegio(String colegio) {
-			if (persona.isMayorEdad()) {
-				throw new IllegalArgumentException("es mayor de edad " + persona.edad);
-			}
-			persona.colegio = colegio;
-			return this;
-		}
+		// public Builder setColegio(String colegio) {
+		// 	if (persona.isMayorEdad()) {
+		// 		throw new IllegalArgumentException("es mayor de edad " + persona.edad);
+		// 	}
+		// 	persona.colegio = colegio;
+		// 	return this;
+		// }
 
 		public Persona build() {
 			return persona;
