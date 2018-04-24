@@ -37,4 +37,16 @@ public class TestLavadora {
 		assertNotNull(factoria);
 		assertTrue(factoria instanceof LavadoraFactory);
 	}
+
+	public void testCargaFrontalFactoria() {
+		
+		LavadoraFactory factoria = new LavadoraFrontalFactory();
+
+		Lavadora lavadora = factoria.crearLavadora();
+
+		assertEquals("frontal", lavadora.tipoCarga);
+		assertTrue(lavadora.tieneMandos);
+		assertTrue(lavadora.tieneTambor);
+
+	}
 }
