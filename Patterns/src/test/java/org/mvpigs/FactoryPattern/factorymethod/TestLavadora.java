@@ -30,9 +30,11 @@ public class TestLavadora {
 		assertTrue(lavadora.tieneTambor);
 	}
 
-	public void testFactrory() {
-		LavadoraFactory factoria = new LavadoraFactory();
+	@Test
+	public void testFactory() {
+		LavadoraFactory factoria = new LavadoraFrontalFactory();
 
-		assertTrue(factoria.isIntanceOf(LavadoraFactory));
+		assertNotNull(factoria);
+		assertTrue(factoria instanceof LavadoraFactory);
 	}
 }
