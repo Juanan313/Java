@@ -49,4 +49,23 @@ public class TestLavadora {
 		assertTrue(lavadora.tieneTambor);
 
 	}
+
+	@Test
+	public void testCargaSuperiorFactory() {
+		
+		// Lavadora lavadora = new LavadoraCargaSuperior();
+		// lavadora.ponerMandos();
+		// lavadora.ponerTambor();
+
+		LavadoraFactory factoria = new LavadoraSuperiorFactory();
+		assertNotNull(factoria);
+
+		Lavadora lavadora = factoria.crearLavadora();
+		assertNotNull(lavadora);
+		
+		assertEquals("superior", lavadora.tipoCarga);
+		assertTrue(lavadora.tieneMandos);
+		assertTrue(lavadora.tieneTambor);
+	}
+
 }
